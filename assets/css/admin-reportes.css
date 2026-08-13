@@ -1,0 +1,130 @@
+.erp-wrap { max-width: 1180px; }
+.erp-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 20px 0 18px;
+    padding: 26px 28px;
+    border-left: 5px solid #ed1c24;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+}
+.erp-eyebrow {
+    color: #b20f16;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.erp-hero h1 { margin: 6px 0 4px; font-size: 30px; }
+.erp-hero p { margin: 0; color: #62676d; }
+.erp-private-badge {
+    padding: 8px 12px;
+    border: 1px solid #e1c76b;
+    border-radius: 999px;
+    background: #fff8df;
+    color: #5d4b0b;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.erp-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, .85fr);
+    gap: 20px;
+}
+.erp-card {
+    padding: 26px;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+}
+.erp-card h2 { margin-top: 0; }
+.erp-periods {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(115px, 1fr));
+    gap: 10px;
+    margin: 22px 0;
+}
+.erp-period-option { position: relative; }
+.erp-period-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.erp-period-option span {
+    display: block;
+    padding: 15px 12px;
+    border: 1px solid #c9cbd0;
+    border-radius: 7px;
+    background: #fff;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.erp-period-option input:checked + span {
+    border-color: #ed1c24;
+    background: #fff3f3;
+    box-shadow: 0 0 0 1px #ed1c24;
+    color: #9f0d13;
+}
+.erp-period-option input:focus-visible + span {
+    outline: 2px solid #2271b1;
+    outline-offset: 2px;
+}
+.erp-custom-dates {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 14px;
+    margin: 0 0 22px;
+    padding: 18px;
+    border: 1px solid #e1c76b;
+    border-radius: 7px;
+    background: #fffaf0;
+}
+.erp-custom-dates[hidden] { display: none; }
+.erp-custom-dates label span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.erp-custom-dates input { width: 100%; }
+.erp-custom-dates p {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #686b70;
+}
+.erp-submit {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 24px !important;
+    font-size: 14px !important;
+    border-radius: 6px !important;
+}
+.erp-card-info ul { margin: 18px 0; }
+.erp-card-info li { margin-bottom: 10px; }
+.erp-types {
+    margin-top: 18px;
+    padding: 14px;
+    border-left: 4px solid #17191d;
+    background: #f6f7f7;
+}
+.erp-types p { margin-bottom: 0; }
+.erp-privacy-note {
+    margin-top: 18px;
+    padding: 15px;
+    border-left: 4px solid #f4bd24;
+    background: #fff8df;
+}
+.erp-privacy-note p { margin-bottom: 0; }
+@media (max-width: 900px) {
+    .erp-grid { grid-template-columns: 1fr; }
+    .erp-periods { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+    .erp-hero { align-items: flex-start; flex-direction: column; }
+}

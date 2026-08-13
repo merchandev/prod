@@ -1,0 +1,73 @@
+/*
+Theme Name: Espressivo Editorial
+Theme URI: https://merchan.dev/edit-pro
+Author: Arturo Merchan | Merchan.Dev
+Author URI: https://merchan.dev
+Description: Espressivo Editorial es un tema y framework de WordPress de alto rendimiento para diarios digitales y portales de noticias. Diseñado bajo un enfoque comercial de marca blanca (white-label) y SaaS, ofrece optimización SEO extrema, velocidad de carga premium, un potente gestor de publicidad integrado, modo oscuro fluido y control editorial avanzado. La solución definitiva para editoriales modernas y monetización de contenidos.
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pro
+Tags: custom-colors, custom-menu, featured-images, grid-layout, news, newspaper, fullscreen
+*/
+
+/* 
+ * Los estilos principales se encuentran en assets/css/main.css 
+ * Este archivo (style.css) se usa principalmente para registrar el tema en WordPress 
+ * y almacenar las variables CSS (Custom Properties) para ser procesadas correctamente 
+ * o inyectadas.
+ */
+
+:root {
+    /* Paleta de colores - Modo Claro (Diurno) Premium */
+    --color-bg: #ffffff;
+    --color-bg-secondary: #f8f9fa;
+    --color-text: #010101;
+    --color-text-muted: #444444;
+    --color-primary: #010101;
+    /* Negro para menú principal y footer */
+    --color-primary-hover: #222222;
+    --color-accent: #CC3332;
+    /* Rojo para acentos */
+    --color-accent-alt: #FFC407;
+    /* Amarillo para detalles */
+
+    --color-border: #e2e8f0;
+
+    /* Sombras (Depth) */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+    /* Tipografía */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Source Serif 4', serif;
+    --font-ui: 'Inter', sans-serif;
+
+    /* Layout */
+    --container-width: 1200px;
+    --border-radius: 8px;
+    /* Bordes suaves modernos */
+
+    /* Transiciones */
+    --transition-speed: 0.3s;
+}
+
+/* ==========================================================================
+   Modo Oscuro (Dark Mode)
+   ========================================================================== */
+body.dark-mode {
+    --color-bg: #010101;
+    --color-bg-secondary: #111111;
+    --color-text: #ffffff;
+    --color-text-muted: #aaaaaa;
+    --color-primary: #111111;
+    --color-primary-hover: #222222;
+    --color-accent: #FFC407;
+    /* El amarillo resalta mejor en fondos oscuros */
+    --color-accent-alt: #CC3332;
+    --color-border: #333333;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.8);
+}

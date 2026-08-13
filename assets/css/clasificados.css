@@ -1,0 +1,369 @@
+.classified-archive,
+.classified-single {
+    background: transparent;
+    color: inherit;
+}
+
+.classified-container,
+.classified-single__container {
+    width: min(1240px, calc(100% - 32px));
+    margin-inline: auto;
+}
+
+.classified-hero {
+    padding: 48px 0 38px;
+    border-bottom: 1px solid #e5e5e5;
+    background: transparent;
+}
+
+.classified-kicker {
+    margin: 0 0 7px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.classified-page-title {
+    margin: 0;
+    font-size: clamp(2.7rem, 7vw, 5.7rem);
+    font-weight: 900;
+    letter-spacing: -0.045em;
+    line-height: 0.92;
+    text-transform: uppercase;
+}
+
+.classified-description {
+    max-width: 720px;
+    margin: 20px 0 0;
+    font-size: 1.08rem;
+    line-height: 1.55;
+}
+
+.classified-search {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    margin: 30px 0 20px;
+    padding-bottom: 22px;
+    border-bottom: 3px double #262626;
+}
+
+.classified-search input {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+}
+
+.classified-search button {
+    min-height: 48px;
+    padding: 10px 24px;
+    border: 1px solid #111;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.classified-search button:hover,
+.classified-search button:focus-visible {
+    background: #b20f16;
+    border-color: #b20f16;
+}
+
+.classified-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.classified-type-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.classified-type-link .classified-type-count {
+    display: inline-grid;
+    min-width: 22px;
+    min-height: 22px;
+    place-items: center;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    font-size: 0.68rem;
+}
+
+.classified-type-link:hover,
+.classified-type-link:focus-visible,
+.classified-type-link.is-active {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+}
+
+.classified-type-link.is-active .classified-type-count {
+    background: #fff;
+    color: #111;
+}
+
+.classified-type-icon-font {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.classified-type-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.classified-results-heading {
+    margin-bottom: 18px;
+    border-bottom: 1px solid #111;
+}
+
+.classified-results-heading h2 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0 0 9px;
+    border-bottom: 3px solid #b20f16;
+    font-size: 1.6rem;
+}
+
+/*
+ * Diagramación de periódico.
+ *
+ * Las tarjetas fluyen verticalmente por columnas.
+ */
+.classified-grid {
+    column-count: 3;
+    column-gap: 26px;
+    column-rule: 1px solid #e5e5e5;
+    padding-bottom: 42px;
+}
+
+.classified-card {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 24px;
+    padding: 0 0 20px;
+    border-bottom: 2px solid #242424;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.classified-card__types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.classified-card__types span {
+    color: #a10e14;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.classified-card__title {
+    margin: 0 0 9px;
+    font-size: 1.24rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.classified-card__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.classified-card__title a:hover,
+.classified-card__title a:focus-visible {
+    color: #a10e14;
+    text-decoration: underline;
+}
+
+.classified-card__content {
+    color: inherit;
+    font-size: 0.93rem;
+    line-height: 1.48;
+}
+
+.classified-card__content p {
+    margin: 0;
+}
+
+.classified-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 13px;
+    padding-top: 9px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.72rem;
+}
+
+.classified-card__more {
+    color: #a10e14;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.classified-pagination {
+    padding: 0 0 54px;
+}
+
+.classified-pagination .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.classified-pagination .page-numbers {
+    display: grid;
+    min-width: 42px;
+    min-height: 42px;
+    place-items: center;
+    padding: 6px 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+}
+
+.classified-pagination .current,
+.classified-pagination a:hover,
+.classified-pagination a:focus-visible {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+}
+
+.classified-empty {
+    margin: 30px 0 60px;
+    padding: 50px 24px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: transparent;
+    text-align: center;
+}
+
+.classified-empty h2 {
+    margin-top: 0;
+}
+
+/* Clasificado individual */
+
+.classified-single {
+    padding: 48px 0 70px;
+}
+
+.classified-detail {
+    max-width: 850px;
+    margin-inline: auto;
+    padding: 42px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.classified-detail__types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.classified-detail__types a {
+    color: #a10e14;
+    font-size: 0.73rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.classified-detail h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 4.2rem);
+    line-height: 1.1;
+}
+
+.classified-detail__date {
+    margin: 17px 0 0;
+    color: inherit;
+    opacity: 0.7;
+    font-size: 0.84rem;
+}
+
+.classified-detail__content {
+    margin-top: 32px;
+    padding-top: 26px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 1.08rem;
+    line-height: 1.68;
+}
+
+.classified-detail__footer {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.classified-detail__footer a {
+    color: #a10e14;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    .classified-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 620px) {
+    .classified-hero {
+        padding: 35px 0 30px;
+    }
+
+    .classified-search {
+        grid-template-columns: 1fr;
+    }
+
+    .classified-search button {
+        width: 100%;
+    }
+
+    .classified-grid {
+        column-count: 1;
+        column-rule: 0;
+    }
+
+    .classified-detail {
+        padding: 26px 20px;
+    }
+}

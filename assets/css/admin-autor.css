@@ -1,0 +1,106 @@
+﻿/**
+ * @author Arturo Merchan | Merchan.Dev | Espressivo Venezuela,C.A
+ * 
+ * ADVERTENCIA LEGAL:
+ * Queda totalmente prohibida su reproduccion, edicion, venta, propaganda, alteracion 
+ * o cualquier otra accion que de una u otra forma violente la propiedad intelectual, 
+ * material y digital de este proyecto. Esta infraccion esta prohibida y penada por la ley.
+ */
+/* ==========================================================================
+   ADMIN-AUTOR.CSS - Custom Admin Theme for Autor
+   ========================================================================== */
+
+/* Admin Bar */
+#wpadminbar {
+    background: #0f172a !important;
+}
+#wpadminbar .ab-item, #wpadminbar a.ab-item {
+    color: #e2e8f0 !important;
+}
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu > li-active > .ab-item,
+#wpadminbar .ab-top-menu > li.hover > .ab-item {
+    background: #1e293b !important;
+    color: #ffffff !important;
+}
+#wpadminbar .menupop .ab-sub-wrapper {
+    background: #1e293b !important;
+}
+#wpadminbar .ab-submenu .ab-item {
+    color: #cbd5e1 !important;
+}
+#wpadminbar .ab-submenu .ab-item:hover {
+    color: #10b981 !important;
+}
+
+/* Sidebar Menu */
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    background-color: #0f172a !important;
+}
+#adminmenu a {
+    color: #cbd5e1 !important;
+}
+#adminmenu a:hover, 
+#adminmenu li.menu-top:hover, 
+#adminmenu li.opensub > a.menu-top, 
+#adminmenu li.menu-top:focus {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, 
+#adminmenu li.current a.menu-top, 
+.folded #adminmenu li.wp-has-current-submenu, 
+#adminmenu .wp-submenu .wp-submenu-head {
+    background: #065f46 !important; /* Forest Green */
+    color: #ffffff !important;
+}
+#adminmenu .wp-submenu a {
+    color: #94a3b8 !important;
+}
+#adminmenu .wp-submenu a:hover, 
+#adminmenu .wp-submenu a:focus {
+    color: #10b981 !important; /* Accent Green */
+    background: none !important;
+}
+#adminmenu li.wp-has-current-submenu .wp-submenu {
+    background-color: #020617 !important; /* Darker background for submenu */
+}
+
+/* Custom menus hover */
+#adminmenu li.menu-top:hover div.wp-menu-image::before,
+#adminmenu li.wp-has-current-submenu div.wp-menu-image::before {
+    color: #ffffff !important;
+}
+#adminmenu div.wp-menu-image::before {
+    color: #94a3b8 !important;
+}
+
+/* Admin Buttons */
+.wp-core-ui .button-primary {
+    background: #065f46 !important;
+    border-color: #065f46 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(6, 95, 70, 0.25) !important;
+    text-shadow: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+.wp-core-ui .button-primary:hover, 
+.wp-core-ui .button-primary:focus {
+    background: #047857 !important;
+    border-color: #047857 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 15px rgba(6, 95, 70, 0.35) !important;
+}
+
+/* Links & Accents */
+a {
+    color: #059669;
+}
+a:hover, a:focus {
+    color: #10b981;
+}
+#update-nag, .update-nag {
+    border-left-color: #065f46 !important;
+}
